@@ -9,13 +9,16 @@ const CakeForm =({cakes, setCakes}) => {
     const [cakePrice, setCakePrice] = useState("")
     const [cakeRating, setCakeRating] = useState("")
     const [cakeIngredients, setCakeIngredients] = useState([])
+    const [errorMessage, setErrorMessage] = useState("")
     
     const handleCheck = () => {
         let errorMessage = "";
 
-        if (cakes.find((cake) => cakes.cakeName == cakeName)){
+        if (cakes.find((cake) => cake.cakeName === cakeName)){
             errorMessage = "Cake already exists";
         }
+        setErrorMessage(errorMessage);
+        return errorMessage !== "";
     }
     
     const handleFormSubmit = (e) => {
@@ -31,6 +34,7 @@ const CakeForm =({cakes, setCakes}) => {
                 price: cakePrice
             }
             updatedCakeList.push(newCake);
+            setCakes(updatedCakeList);
         }
     }  
 
@@ -70,7 +74,8 @@ const CakeForm =({cakes, setCakes}) => {
                 onChange={(e) => setCakeIngredients(e.target.value)}
                 />         
                 <input type="submit" value="Submit"/>      
-            </form>              
+            </form>
+            <p>{errorMessage}</p>              
         </>
 
     );

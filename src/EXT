@@ -1,7 +1,9 @@
 `The extension of this lab builds on the MVP by adding a form which will enable us to add a new cake to our list, which is automatically rendered`
 
 -   Add a CakeForm component where the user can add details of a new cake. This will be rendered as part of the CakeContainer
+<!-- fails to add cake because of a .find() error -->
 -   Build out functionality which takes the input of the form and adds a new cake to the Cakes array housed in state
+
 -   Modify the original return statement of the CakeContainer to instead .map() over the Cakes state object, creating an identical Cake component for each cake in the array
 -   Envision and code some functionality that makes use of the price or rating properties of each cake. Time to get creative!
 
