@@ -1,18 +1,11 @@
 `Your task is to build upon the start code to create a React app which displays all pieces of information for each cake`
 
 - Pass the information needed for each cake from the CakeContainer to each Cake as `props`
-<!-- information needed: name, price, rating and ingredients used-->
-<!-- for each object in listOfCakes append it onto a new list we create using .map function-->?
-
-
-<!-- cakecontainer should be sending data to cake ONE WAY       -adding a new cake on front-end (name(etc)_ is done in newComponentContainer?-->
 
 - Render the information passed down to Cake such as `name` and `rating`
-<!-- -->
-<!-- handle addCake? -->
+
 
 - Ensure that the ingredients of each Cake are shown as a list
-<!-- each item on the array is a separate li element that is appended onto an ingredientList  -->
 
 `Tips:`
 

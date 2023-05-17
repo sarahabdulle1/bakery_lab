@@ -1,0 +1,11 @@
+`The extension of this lab builds on the MVP by adding a form which will enable us to add a new cake to our list, which is automatically rendered`
+
+-   Add a CakeForm component where the user can add details of a new cake. This will be rendered as part of the CakeContainer
+-   Build out functionality which takes the input of the form and adds a new cake to the Cakes array housed in state
+-   Modify the original return statement of the CakeContainer to instead .map() over the Cakes state object, creating an identical Cake component for each cake in the array
+-   Envision and code some functionality that makes use of the price or rating properties of each cake. Time to get creative!
+
+`Tips:`
+
+- Remember that you cannot directly modify state objects when using React, you need to make use of the relavent SetState() function
+- For the ingredients list you can use a single text input field with the ingredients comma-separated. The .split() method will turn the single string from the input into an array of individual strings, for example:

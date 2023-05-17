@@ -50,6 +50,7 @@ const CakeContainer = () => {
 	// accessing the cake
 	// adding new Cakes to new CakeList
 	const newCakeList = listOfCakes.map(cake => cake);
+
 	
 	console.log(newCakeList);
   	return (
