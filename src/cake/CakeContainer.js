@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cake from "./Cake.js";
+import CakeForm from "./CakeForm.js"
 
 const CakeContainer = () => {
 
@@ -58,6 +59,7 @@ const CakeContainer = () => {
 			<Cake cake={listOfCakes[0]}/>
 			<Cake cake={listOfCakes[1]}/>
 			<Cake cake={listOfCakes[2]}/>
+			<CakeForm />
 		</>
   	)
 }
